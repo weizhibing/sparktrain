@@ -1,11 +1,11 @@
 # kafka
 kafka配置过程
 1.单节点单broker部署及使用
-	第一步：启动zookeeper ./zkServer.sh start
-	启动kafka.  kafka-server-start.sh $KAFKA_HOME/config/server.properties 
-	(生产消息)创建 topic kafka-topics.sh --create --zookeeper cn:2181 --replication-factor 1 --partitions 1 --topic hello_topic
-	发送消息 kafka-console-producer.sh --broker-list cn:9092 --topic hello_topic
-	消费消息 kafka-console-consumer.sh --zookeeper cn:2181 --topic hello_topic --from-beginning
+	1.1第一步：启动zookeeper ./zkServer.sh start
+	1.2启动kafka.  kafka-server-start.sh $KAFKA_HOME/config/server.properties 
+	1.3(生产消息)创建 topic kafka-topics.sh --create --zookeeper cn:2181 --replication-factor 1 --partitions 1 --topic hello_topic
+	1.4发送消息 kafka-console-producer.sh --broker-list cn:9092 --topic hello_topic
+	1.5消费消息 kafka-console-consumer.sh --zookeeper cn:2181 --topic hello_topic --from-beginning
 
 
 	查看所有topic   kafka-topics.sh --list --zookeeper cn:2181
