@@ -10,7 +10,6 @@ public class kafkaClientApp {
         new kafkaProducer(kafkaProperties.TOPIC).start();
 
         //new kafkaConsumer(kafkaProperties.TOPIC).start();
-        //test123
 
     }
 
