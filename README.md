@@ -23,4 +23,4 @@ kafka配置过程
 	创建topic kafka-topics.sh --create --zookeeper cn:2181 --replication-factor 3 --partitions 1 --topic my-replicated-topic
 	发送消息 kafka-console-producer.sh --broker-list cn:9093,cn:9094,cn:9095 --topic my-replicated-topic
 	消费消息 kafka-console-consumer.sh --zookeeper cn:2181 --topic my-replicated-topic
-
+#2019-1-30
