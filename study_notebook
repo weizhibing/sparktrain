@@ -453,10 +453,10 @@ select host, user, authentication_string, plugin from user;
 
 4.授权 root 用户的所有权限并设置远程访问
 
+update user set host='%' where user='root';
 
-
--- GRANT ALL ON *.* TO 'root'@'%';
-grant all on *.* to 'root'@'localhost'
+#-- GRANT ALL ON *.* TO 'root'@'%';
+#grant all on *.* to 'root'@'localhost'
 
 (GRANT ALL ON 表示所有权限，% 表示通配所有 host，可以访问远程。)
 
