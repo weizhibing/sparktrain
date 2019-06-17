@@ -227,7 +227,9 @@ RSA host key for 47.96.161.12 has changed and you have requested strict checking
 Host key verification failed.
 
 
-ssh-keygen -R 47.96.161.12
+解决办法 ：1.ssh-keygen -R 47.96.161.12
+	 2./var/root/.ssh/known_hosts 把这个文件删除。
+
 
 
 
