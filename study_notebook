@@ -402,7 +402,7 @@ mysql -u root -p
 
 
 
-ALTER user 'root'@'localhost' IDENTIFIED BY 'Xpf123@';
+ALTER user 'root'@'localhost' IDENTIFIED BY 'Xpf123@,';
 
 其中 Xpf123@ 为你设置的新密码，注意这个密码如果设置的比较简单，例如 123456 等等，会设置不成功，它会提示你设置的密码太简单，最好设置成大写字母、数字、符号的组合。
 
